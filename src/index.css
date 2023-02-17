@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #141414;
+  font-family: sans-serif;
+}
+
+.invert {
+  filter: invert(1);
+}
+
+.bg_cover{
+  background-image: url('./components/assets/images/img1.png');
+  background: no-repeat;
+}
