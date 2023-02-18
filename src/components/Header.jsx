@@ -34,21 +34,24 @@ function Header() {
     },
   ]
 
+  const scrollTo = () => {
+    let element = document.getElementById('top_ten')
+    element.scrollIntoView({ behavior: 'smooth', block: 'center' })
+  }
+
   return (
     <div className="fixed top-0 z-10 w-full bg-[#141414] px-5 py-5 grid grid-flow-col lg:justify-between md:justify-around items-center shadow-lg overflow-hidden">
-
       <div className="flex flex-row items-center gap-5">
-      {/* <p className="text-[#E50815] font-bold text-[22px] cursor-pointer">
-        NETFLIX
-      </p> */}
-      <img width="100px" height="24px" src={logo} alt="netflix-logo"/>
-        
+       
+        <img width="100px" height="24px" src={logo} alt="netflix-logo" />
+
         {navItems.map((item) => (
-          <Link to={`${item.link}`}>
-            <p className="lg:block md:hidden hidden text-[14px] hover:text-[#6B6B6B] cursor-pointer delay-90 font-semiBold">
-              {item.name}
-            </p>
-          </Link>
+          <p
+            onClick={scrollTo}
+            className="lg:block md:hidden hidden text-[14px] hover:text-[#6B6B6B] cursor-pointer delay-90 font-semiBold"
+          >
+            {item.name}
+          </p>
         ))}
       </div>
 

@@ -125,6 +125,8 @@ const top = [
 ]
 
 function Browse() {
+
+  
   return (
     <div className="text-white m-auto overflow-hidden">
       <Header />
@@ -172,7 +174,7 @@ function Browse() {
             )),
           ]}
 
-          <p className="font-semiBold lg:text-[22px] text-[16px] pb-2 p-5">
+          <p id="top_ten" className="font-semiBold lg:text-[22px] text-[16px] pb-2 p-5">
             Top 10 TV Shows in India Today
           </p>
 
@@ -181,18 +183,19 @@ function Browse() {
               <>
                 <img
                   className="relative left-[20px]"
-                  width="80px"
+                  width="150px"
                   src={item.icon}
                   alt={item.icon}
                 />
                 <img
-                  src={`https://picsum.photos/150/100?id=${Math.random() * 10}`}
+                  src={`https://picsum.photos/150/170?id=${Math.random() * 10}`}
                   className="rounded-md cursor-pointer "
                   alt={item}
                 />
               </>
             ))}
           </div>
+          
         </div>
         
       </div>
