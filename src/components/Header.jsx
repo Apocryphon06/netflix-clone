@@ -40,7 +40,7 @@ function Header() {
   }
 
   return (
-    <div className="fixed top-0 z-10 w-full bg-[#141414] px-5 py-5 grid grid-flow-col lg:justify-between md:justify-around items-center shadow-lg overflow-hidden">
+    <div className="fixed top-0 z-10 w-full bg-[#141414] px-5 py-5 grid grid-flow-col lg:justify-between justify-between items-center shadow-lg overflow-hidden">
       <div className="flex flex-row items-center gap-5">
        
         <img width="100px" height="24px" src={logo} alt="netflix-logo" />

@@ -174,7 +174,7 @@ function Browse() {
             )),
           ]}
 
-          <p id="top_ten" className="font-semiBold lg:text-[22px] text-[16px] pb-2 p-5">
+          {/* <p id="top_ten" className="font-semiBold lg:text-[22px] text-[16px] pb-2 p-5">
             Top 10 TV Shows in India Today
           </p>
 
@@ -194,7 +194,7 @@ function Browse() {
                 />
               </>
             ))}
-          </div>
+          </div> */}
           
         </div>
         
